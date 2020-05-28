@@ -8,6 +8,7 @@ import Progress from './components/Progress';
 import Offices from './components/Offices';
 import Investors from './components/Investors';
 import Future from './components/Future';
+import { TopFooter } from './components/common/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Offices />
       <Investors />
       <Future />
+      <TopFooter />
     </Box>
   );
 }
