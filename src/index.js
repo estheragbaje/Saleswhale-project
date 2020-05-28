@@ -16,6 +16,7 @@ const myTheme = {
     '3xl': '58px',
     '2xl': '32px',
     xl: '28px',
+    '2lg': '26px',
     lg: '21px',
     md: '18px',
     sm: '16px',
