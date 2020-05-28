@@ -11,11 +11,19 @@ function ProgressItem({ year, children, ...rest }) {
         alignItems="center"
         px={12}
       >
-        <Text fontSize="26px" color="#0688FA" fontWeight="700">
-          {year}
-        </Text>
+        <Box minWidth="100px">
+          <Text fontSize="26px" color="#0688FA" fontWeight="700">
+            {year}
+          </Text>
+        </Box>
 
-        <Stack left="170px" right="auto" z-index="10" alignItems="center">
+        <Stack
+          left="170px"
+          right="auto"
+          z-index="10"
+          alignItems="center"
+          paddingLeft="20px"
+        >
           <Divider
             orientation="vertical"
             opacity="1"
