@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider, CSSReset } from '@chakra-ui/core';
+import { ThemeProvider, CSSReset, theme } from '@chakra-ui/core';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const myTheme = {
+  ...theme,
+  fonts: {
+    heading: 'Source Sans Pro, sans-serif',
+    subheading: 'Source Sans Pro, sans-serif',
+    body: 'Source Sans Pro, sans-serif',
+  },
+  color: {
+    heading: '#002240',
+  },
+};
+
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
+    <ThemeProvider theme={myTheme}>
       <CSSReset />
       <App />
     </ThemeProvider>

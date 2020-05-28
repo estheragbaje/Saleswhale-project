@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, SimpleGrid, Text, Button, Flex } from '@chakra-ui/core';
 import { LogoIcon } from './Logo';
 
-export function HeaderText({ children }) {
+export function NavigationText({ children }) {
   return (
     <Text color="#002240" fontWeight="700" fontSize="18px">
       {children}
@@ -10,15 +10,15 @@ export function HeaderText({ children }) {
   );
 }
 
-function Header() {
+function Navigation() {
   return (
     <Box py={8}>
       <Flex alignItems="center" justifyContent="space-between">
         <LogoIcon width="200px" />
         <SimpleGrid columns={3} spacing={12} textAlign="center">
-          <HeaderText>Why Saleswhale?</HeaderText>
-          <HeaderText>Product</HeaderText>
-          <HeaderText>Company</HeaderText>
+          <NavigationText>Why Saleswhale?</NavigationText>
+          <NavigationText>Product</NavigationText>
+          <NavigationText>Company</NavigationText>
         </SimpleGrid>
         <SimpleGrid columns={2} spacing={4}>
           <Button variant="outline" variantColor="blue">
@@ -31,4 +31,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navigation;
