@@ -13,7 +13,7 @@ function OfficeCard({ location, address, logo, name, ...rest }) {
       boxShadow="0px 10px 40px rgba(0, 0, 0, 0.08)"
     >
       {logo ? (
-        <Image src={logo} alt={name} />
+        <Image src={logo} alt={name} marginLeft="auto" marginRight="auto" />
       ) : (
         <Box>
           <Image

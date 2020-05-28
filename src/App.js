@@ -6,6 +6,7 @@ import Navigation from './components/common/Navigation';
 import Culture from './components/Culture';
 import Progress from './components/Progress';
 import Offices from './components/Offices';
+import Investors from './components/Investors';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Culture />
       <Progress />
       <Offices />
+      <Investors />
     </Box>
   );
 }
