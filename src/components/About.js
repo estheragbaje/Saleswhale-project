@@ -3,7 +3,7 @@ import React from 'react';
 
 function About() {
   return (
-    <Box margin="auto" maxWidth="100%">
+    <Box margin="auto" paddingTop={8}>
       <Image
         src="../assets/hero-img.png"
         alt="hero image"
