@@ -7,6 +7,7 @@ import Culture from './components/Culture';
 import Progress from './components/Progress';
 import Offices from './components/Offices';
 import Investors from './components/Investors';
+import Future from './components/Future';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Progress />
       <Offices />
       <Investors />
+      <Future />
     </Box>
   );
 }
