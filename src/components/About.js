@@ -20,7 +20,8 @@ function About() {
       >
         <Box>
           <Heading
-            fontSize={['32px', '32px', '58px']}
+            // fontSize={['32px', '32px', '58px']}
+            fontSize={['2xl', '2xl', '3xl']}
             lineHeight={['40px', '40px', '62px']}
           >
             A future where AI and humans work hand in hand
@@ -28,7 +29,7 @@ function About() {
         </Box>
 
         <Box
-          fontSize={['16px', '16px', '18px']}
+          fontSize={['sm', 'sm', 'md']}
           lineHeight={['24px', '24px', '32px']}
         >
           <Text paddingBottom={6}>

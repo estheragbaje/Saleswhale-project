@@ -4,7 +4,7 @@ import { LogoIcon } from './Logo';
 
 export function NavigationText({ children }) {
   return (
-    <Text color="#002240" fontWeight="700" fontSize="18px">
+    <Text color="#002240" fontWeight="700" fontSize="md">
       {children}
     </Text>
   );

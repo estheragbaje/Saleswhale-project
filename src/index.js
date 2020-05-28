@@ -15,6 +15,18 @@ const myTheme = {
   color: {
     heading: '#002240',
   },
+  fontSizes: {
+    '3xl': '58px',
+    '2xl': '32px',
+    xl: '28px',
+    lg: '21px',
+    md: '18px',
+    sm: '16px',
+  },
+  lineHeights: {
+    tall: '24px',
+    taller: '32px',
+  },
 };
 
 ReactDOM.render(
