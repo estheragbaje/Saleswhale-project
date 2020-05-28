@@ -12,9 +12,6 @@ const myTheme = {
     subheading: 'Source Sans Pro, sans-serif',
     body: 'Source Sans Pro, sans-serif',
   },
-  color: {
-    heading: '#002240',
-  },
   fontSizes: {
     '3xl': '58px',
     '2xl': '32px',
@@ -26,6 +23,7 @@ const myTheme = {
   lineHeights: {
     tall: '24px',
     taller: '32px',
+    tallest: '38px',
   },
 };
 
