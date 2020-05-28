@@ -8,19 +8,26 @@ import Progress from './components/Progress';
 import Offices from './components/Offices';
 import Investors from './components/Investors';
 import Future from './components/Future';
-import { TopFooter } from './components/common/Footer';
+import { TopFooter, BottomFooter } from './components/common/Footer';
 
 function App() {
   return (
-    <Box px="110px">
-      <Navigation />
-      <About />
-      <Culture />
-      <Progress />
-      <Offices />
-      <Investors />
-      <Future />
-      <TopFooter />
+    <Box>
+      <Box px="110px">
+        <Navigation />
+        <About />
+        <Culture />
+        <Progress />
+        <Offices />
+        <Investors />
+      </Box>
+      <Box px="60px">
+        <Future />
+      </Box>
+      <Box px="110px">
+        <TopFooter />
+      </Box>
+      <BottomFooter />
     </Box>
   );
 }

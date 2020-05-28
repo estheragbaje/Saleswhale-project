@@ -1,6 +1,8 @@
+import { Box, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/core';
 import React from 'react';
-import { Box, Heading, Text, SimpleGrid, Flex } from '@chakra-ui/core';
+import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { LogoIcon } from './Logo';
+import SocialLink from './SocialLink';
 
 export function FooterHeading({ title }) {
   return (
@@ -89,6 +91,43 @@ export function TopFooter() {
         <Product />
         <Company />
         <Contact />
+      </SimpleGrid>
+    </Flex>
+  );
+}
+
+export function BottomFooter() {
+  return (
+    <Flex
+      bg="#F4F4F4"
+      padding={12}
+      justifyContent="space-between"
+      alignItems="center"
+      height="240px"
+      direction={['column-reverse', 'column-reverse', 'row', 'row']}
+    >
+      <Box textAlign={['center', 'center', 'left', 'left']}>
+        <FooterHeading title="Privacy Terms" />
+        <FooterText
+          py={12}
+          fontSize="14px"
+          children="© 2020 Saleswhale, Inc. All rights reserved."
+        />
+      </Box>
+      <SimpleGrid listStyleType="none" columns={3} spacing={16}>
+        <SocialLink
+          icon={FaFacebook}
+          label="facebook"
+          link="#"
+          color="#35589D"
+        />
+        <SocialLink icon={FaTwitter} label="twitter" link="#" color="#5DA8DC" />
+        <SocialLink
+          icon={FaLinkedin}
+          label="linkedin"
+          link="#"
+          color="#337BB1"
+        />
       </SimpleGrid>
     </Flex>
   );
