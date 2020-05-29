@@ -82,7 +82,14 @@ export function NavigationText({ children }) {
 
 export function DesktopNavigation() {
   return (
-    <Box py={8} px={['30px', '30px', '60px', '110px']}>
+    <Box
+      py={8}
+      px={['30px', '30px', '60px', '110px']}
+      position="sticky"
+      top="0"
+      zIndex={1}
+      bg="white"
+    >
       <Flex alignItems="center" justifyContent="space-between">
         <LogoIcon minWidth="200px" />
         <SimpleGrid columns={3} spacing={12} textAlign="center">

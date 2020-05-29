@@ -96,12 +96,6 @@ export function TopFooter() {
         <Company />
         <Contact />
       </SimpleGrid>
-      {/* <Box>
-        <WhySaleswhale />
-        <Product />
-        <Company />
-        <Contact />
-      </Box> */}
     </Flex>
   );
 }
@@ -115,6 +109,10 @@ export function BottomFooter() {
       alignItems="center"
       height="240px"
       direction={['column-reverse', 'column-reverse', 'row', 'row']}
+      backgroundImage="url(./assets/Vector3_footer_bg.png)"
+      backgroundSize="contain"
+      backgroundPosition=" 0 170px"
+      backgroundRepeat="repeat-x"
     >
       <Box textAlign={['center', 'center', 'left', 'left']}>
         <FooterHeading title="Privacy Terms" />

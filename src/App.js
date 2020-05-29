@@ -1,15 +1,14 @@
-import React from 'react';
 import { Box } from '@chakra-ui/core';
+import React from 'react';
 import './App.css';
 import About from './components/About';
+import { BottomFooter, TopFooter } from './components/common/Footer';
 import Navigation from './components/common/Navigation';
 import Culture from './components/Culture';
-import Progress from './components/Progress';
-import Offices from './components/Offices';
-import Investors from './components/Investors';
 import Future from './components/Future';
-import { TopFooter, BottomFooter } from './components/common/Footer';
-import OfficeInvestor from './components/common/OfficeInvestor';
+import Investors from './components/Investors';
+import Offices from './components/Offices';
+import Progress from './components/Progress';
 
 function App() {
   return (
@@ -18,23 +17,13 @@ function App() {
         <Navigation />
         <About />
         <Culture />
-      </Box>
-      <Box>
         <Progress />
-      </Box>
-      <Box>
         <Offices />
         <Investors />
-        {/* <OfficeInvestor /> */}
-      </Box>
-
-      <Box>
         <Future />
+        <TopFooter />
+        <BottomFooter />
       </Box>
-
-      <TopFooter />
-
-      <BottomFooter />
     </Box>
   );
 }

@@ -15,7 +15,7 @@ function Investors() {
       <Box
         backgroundImage="url(./assets/Vector20_bg_image.png)"
         backgroundRepeat="no-repeat"
-        zIndex="1"
+        zIndex="2"
         backgroundPosition="right"
       >
         <Box px={['30px', '30px', '60px', '110px']} textAlign="center">
