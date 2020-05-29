@@ -1,13 +1,12 @@
 import { Box, Heading, Stack, Divider } from '@chakra-ui/core';
 import React from 'react';
 import ProgressItem from './common/ProgressItem';
+import SubHeading from './common/Subheading';
 
 function Progress() {
   return (
-    <Box paddingY={16} textAlign={['left', 'left', 'center', 'center']}>
-      <Heading fontSize={['xl', '2xl', '3xl']} color="#002240">
-        Our Progress
-      </Heading>
+    <Box paddingY={16} textAlign="center" px={['0px', '0px', '60px', '110px']}>
+      <SubHeading children="Our Progress" />
       <Stack bg="#EFF8FF" textAlign="center" marginTop="27px">
         <ProgressItem
           year="2015"
@@ -35,7 +34,7 @@ function Progress() {
           children="Founded in Singapore by Gabriel Lim, Ethan Le, and Venus Wong"
         />
         <Box
-          left="170px"
+          marginLeft={['120px', '113px', '117px', '245px']}
           right="auto"
           z-index="10"
           alignItems="center"

@@ -17,10 +17,15 @@ function App() {
         <Navigation />
         <About />
         <Culture />
+      </Box>
+      <Box>
         <Progress />
+      </Box>
+      <Box px={['30px', '30px', '60px', '110px']}>
         <Offices />
         <Investors />
       </Box>
+
       <Box px="60px">
         <Future />
       </Box>

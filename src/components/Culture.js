@@ -1,16 +1,12 @@
+import { Box, Button, SimpleGrid, Text } from '@chakra-ui/core';
 import React from 'react';
-import { Box, Heading, Text, SimpleGrid, Button } from '@chakra-ui/core';
 import CultureCard from './common/CultureCard';
+import SubHeading from './common/Subheading';
 
 function Culture() {
   return (
-    <Box
-      paddingY={[4, 8, 16]}
-      textAlign={['left', 'left', 'center', 'center']}
-    >
-      <Heading fontSize={['xl', 'xl', '2xl', '3xl']} color="#002240">
-        Our Culture
-      </Heading>
+    <Box paddingY={[4, 8, 16]} textAlign={['left', 'left', 'center', 'center']}>
+      <SubHeading children="Our Culture" />
       <Text
         color="#537089"
         paddingTop="27px"

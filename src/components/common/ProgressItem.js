@@ -11,8 +11,12 @@ function ProgressItem({ year, children, ...rest }) {
         alignItems="center"
         px={12}
       >
-        <Box minWidth="100px">
-          <Text fontSize="26px" color="#0688FA" fontWeight="700">
+        <Box maxWidth="100px">
+          <Text
+            fontSize={['sm', 'sm', 'md', '2lg']}
+            color="#0688FA"
+            fontWeight="700"
+          >
             {year}
           </Text>
         </Box>
@@ -27,15 +31,23 @@ function ProgressItem({ year, children, ...rest }) {
           <Divider
             orientation="vertical"
             opacity="1"
-            height="110px"
+            minHeight="120px"
             borderWidth="4px"
             borderColor="#0688FA"
           />
           <ProgressIcon width="80px" marginTop="-8px" />
         </Stack>
-        <Text fontSize="26px" color="#002240" fontWeight="500">
-          {children}
-        </Text>
+        <Box px={4}></Box>
+        <Box maxWidth="600px">
+          <Text
+            fontSize={['sm', 'sm', 'md', '2lg']}
+            color="#002240"
+            fontWeight="700"
+            textAlign="left"
+          >
+            {children}
+          </Text>
+        </Box>
       </Flex>
     </Box>
   );
