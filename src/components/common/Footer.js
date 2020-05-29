@@ -84,14 +84,24 @@ export function TopFooter() {
       alignItems="flex-start"
       py={16}
       direction={['column', 'column', 'row', 'row']}
+      px={['30px', '30px', '60px', '110px']}
     >
-      <LogoIcon minWidth={['100px', '100px', '200px', '200px']} />
-      <SimpleGrid columns={[2, 2, 4]} spacing={8} maxWidth="800px">
+      <LogoIcon
+        minWidth={['70px', '70px', '200px', '200px']}
+        py={[8, 8, 0, 0]}
+      />
+      <SimpleGrid columns={[2, 2, 2, 4]} spacing={8} marginLeft={[0, 0, 8, 12]}>
         <WhySaleswhale />
         <Product />
         <Company />
         <Contact />
       </SimpleGrid>
+      {/* <Box>
+        <WhySaleswhale />
+        <Product />
+        <Company />
+        <Contact />
+      </Box> */}
     </Flex>
   );
 }

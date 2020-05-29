@@ -28,12 +28,12 @@ function App() {
         {/* <OfficeInvestor /> */}
       </Box>
 
-      <Box >
+      <Box>
         <Future />
       </Box>
-      <Box px="110px">
-        <TopFooter />
-      </Box>
+
+      <TopFooter />
+
       <BottomFooter />
     </Box>
   );

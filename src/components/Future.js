@@ -1,5 +1,5 @@
+import { Box, Button, SimpleGrid } from '@chakra-ui/core';
 import React from 'react';
-import { Box, Heading, Button, SimpleGrid } from '@chakra-ui/core';
 import SubHeading from './common/Subheading';
 
 function Future() {
