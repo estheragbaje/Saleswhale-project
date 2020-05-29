@@ -13,7 +13,7 @@ import { TopFooter, BottomFooter } from './components/common/Footer';
 function App() {
   return (
     <Box>
-      <Box px="110px">
+      <Box px={['30px', '30px', '60px', '110px']}>
         <Navigation />
         <About />
         <Culture />
