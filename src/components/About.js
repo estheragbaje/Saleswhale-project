@@ -3,7 +3,12 @@ import React from 'react';
 
 function About() {
   return (
-    <Box margin="auto" paddingTop={6} paddingBottom={[4, 8]}>
+    <Box
+      margin="auto"
+      paddingTop={6}
+      paddingBottom={[4, 8]}
+      px={['30px', '30px', '60px', '110px']}
+    >
       <Image
         src="../assets/hero-img.png"
         alt="hero image"

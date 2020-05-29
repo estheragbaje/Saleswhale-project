@@ -9,7 +9,8 @@ function OfficeCard({ location, address, logo, name, ...rest }) {
       bg="white"
       border="1px solid #E5E5E5"
       borderRadius="5px"
-      padding={12}
+      paddingY={16}
+      paddingX={12}
       boxShadow="0px 10px 40px rgba(0, 0, 0, 0.08)"
     >
       {logo ? (

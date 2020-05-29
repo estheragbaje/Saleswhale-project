@@ -1,19 +1,33 @@
 import React from 'react';
 import { SimpleGrid, Box, Heading } from '@chakra-ui/core';
 import OfficeCard from './common/OfficeCard';
+import Subheading from './common/Subheading';
 
 function Investors() {
   return (
-    <Box paddingY={16} textAlign={['left', 'left', 'center', 'center']}>
-      <Heading fontSize={['xl', '2xl', '3xl']} color="#002240">
-        Our Investors
-      </Heading>
-      <SimpleGrid columns={[1, 1, 2, 2]} spacing={20} paddingTop="27px">
-        <OfficeCard logo="../assets/YC logo 2.png" />
-        <OfficeCard logo="../assets/MHV-logo 2.svg" />
-        <OfficeCard logo="../assets/STRIVE_logo 2.svg" />
-        <OfficeCard logo="../assets/wavemaker-350 2.svg" />
-      </SimpleGrid>
+    <Box
+      paddingY={16}
+      textAlign={['left', 'left', 'center', 'center']}
+      backgroundImage="url(./assets/Vector18_bg_image.png)"
+      backgroundSize="cover"
+      backgroundPosition=" 0 "
+    >
+      <Box
+        backgroundImage="url(./assets/Vector20_bg_image.png)"
+        backgroundRepeat="no-repeat"
+        zIndex="1"
+        backgroundPosition="right"
+      >
+        <Box px={['30px', '30px', '60px', '110px']} textAlign="center">
+          <Subheading children="Our Investors" />
+          <SimpleGrid columns={[1, 1, 2, 2]} spacing={20} paddingTop="27px">
+            <OfficeCard logo="../assets/YC logo 2.svg" />
+            <OfficeCard logo="../assets/MHV-logo 2.svg" />
+            <OfficeCard logo="../assets/STRIVE_logo 2.svg" />
+            <OfficeCard logo="../assets/wavemaker-350 2.svg" />
+          </SimpleGrid>
+        </Box>
+      </Box>
     </Box>
   );
 }

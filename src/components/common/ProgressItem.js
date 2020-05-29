@@ -13,7 +13,7 @@ function ProgressItem({ year, children, ...rest }) {
       >
         <Box maxWidth="100px">
           <Text
-            fontSize={['sm', 'sm', 'md', '2lg']}
+            fontSize={['sm', 'sm', '2lg', '2lg']}
             color="#0688FA"
             fontWeight="700"
           >
@@ -40,7 +40,7 @@ function ProgressItem({ year, children, ...rest }) {
         <Box px={4}></Box>
         <Box maxWidth="600px">
           <Text
-            fontSize={['sm', 'sm', 'md', '2lg']}
+            fontSize={['sm', 'sm', 'lg', '2lg']}
             color="#002240"
             fontWeight="700"
             textAlign="left"

@@ -9,11 +9,12 @@ import Offices from './components/Offices';
 import Investors from './components/Investors';
 import Future from './components/Future';
 import { TopFooter, BottomFooter } from './components/common/Footer';
+import OfficeInvestor from './components/common/OfficeInvestor';
 
 function App() {
   return (
     <Box>
-      <Box px={['30px', '30px', '60px', '110px']}>
+      <Box>
         <Navigation />
         <About />
         <Culture />
@@ -21,9 +22,10 @@ function App() {
       <Box>
         <Progress />
       </Box>
-      <Box px={['30px', '30px', '60px', '110px']}>
+      <Box>
         <Offices />
         <Investors />
+        {/* <OfficeInvestor /> */}
       </Box>
 
       <Box px="60px">

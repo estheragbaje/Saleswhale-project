@@ -35,7 +35,12 @@ export function MobileNavigation() {
 
   return (
     <>
-      <Flex direction="row" justifyContent="space-between" alignItems="center">
+      <Flex
+        direction="row"
+        justifyContent="space-between"
+        alignItems="center"
+        px={['30px', '30px', '60px', '110px']}
+      >
         <LogoIcon alt="logo" minWidth="120px" />
         <Button variantColor="white" onClick={onOpen}>
           <Box as={AiOutlineMenu} size="30px" color="black" />
@@ -77,7 +82,7 @@ export function NavigationText({ children }) {
 
 export function DesktopNavigation() {
   return (
-    <Box py={8}>
+    <Box py={8} px={['30px', '30px', '60px', '110px']}>
       <Flex alignItems="center" justifyContent="space-between">
         <LogoIcon minWidth="200px" />
         <SimpleGrid columns={3} spacing={12} textAlign="center">

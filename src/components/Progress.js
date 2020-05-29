@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, Divider } from '@chakra-ui/core';
+import { Box, Divider, Stack } from '@chakra-ui/core';
 import React from 'react';
 import ProgressItem from './common/ProgressItem';
 import SubHeading from './common/Subheading';
@@ -34,7 +34,7 @@ function Progress() {
           children="Founded in Singapore by Gabriel Lim, Ethan Le, and Venus Wong"
         />
         <Box
-          marginLeft={['120px', '113px', '117px', '245px']}
+          marginLeft={['120px', '113px', '135px', '245px']}
           right="auto"
           z-index="10"
           alignItems="center"

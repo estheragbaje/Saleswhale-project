@@ -5,7 +5,11 @@ import SubHeading from './common/Subheading';
 
 function Culture() {
   return (
-    <Box paddingY={[4, 8, 16]} textAlign={['left', 'left', 'center', 'center']}>
+    <Box
+      paddingY={[4, 8, 16]}
+      textAlign={['left', 'left', 'center', 'center']}
+      px={['30px', '30px', '60px', '110px']}
+    >
       <SubHeading children="Our Culture" />
       <Text
         color="#537089"
