@@ -28,7 +28,7 @@ function App() {
         {/* <OfficeInvestor /> */}
       </Box>
 
-      <Box px="60px">
+      <Box >
         <Future />
       </Box>
       <Box px="110px">

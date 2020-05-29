@@ -1,22 +1,27 @@
 import React from 'react';
 import { Box, Heading, Button, SimpleGrid } from '@chakra-ui/core';
+import SubHeading from './common/Subheading';
 
 function Future() {
   return (
-    <Box bg="#329DFA">
-      <Box padding={24}>
-        <Heading
-          fontSize={['28px', '28px', '48px']}
+    <Box bg="#329DFA" mx={[0, 0, 12, 12]}>
+      <Box p={8}>
+        <SubHeading
+          children="See the future"
+          textAlign="center"
           color="white"
-          textAlign={['left', 'left', 'center', 'center']}
+        />
+        <SimpleGrid
+          columns={[1, 1, 2, 2]}
+          spacing={8}
+          py={8}
+          maxWidth="500px"
+          margin="auto"
         >
-          See the future
-        </Heading>
-        <SimpleGrid columns={[1, 1, 2, 2]} spacing={8} py={8}>
           <Button variantColor="gray" size="lg">
             Get a Demo
           </Button>
-          <Button variantColor="gray" variant="outline" size="lg">
+          <Button variantColor="gray" variant="outline" size="lg" color="white">
             Read use cases
           </Button>
         </SimpleGrid>

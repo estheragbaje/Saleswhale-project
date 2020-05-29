@@ -1,5 +1,5 @@
+import { Box, SimpleGrid } from '@chakra-ui/core';
 import React from 'react';
-import { SimpleGrid, Box, Heading } from '@chakra-ui/core';
 import OfficeCard from './common/OfficeCard';
 import Subheading from './common/Subheading';
 
