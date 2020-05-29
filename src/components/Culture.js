@@ -4,11 +4,18 @@ import CultureCard from './common/CultureCard';
 
 function Culture() {
   return (
-    <Box paddingY={16} textAlign={['left', 'left', 'center', 'center']}>
-      <Heading fontSize={['xl', '2xl', '3xl']} color="#002240">
+    <Box
+      paddingY={[4, 8, 16]}
+      textAlign={['left', 'left', 'center', 'center']}
+    >
+      <Heading fontSize={['xl', 'xl', '2xl', '3xl']} color="#002240">
         Our Culture
       </Heading>
-      <Text color="#537089" paddingTop="27px" fontSize={['sm', 'sm', 'lg']}>
+      <Text
+        color="#537089"
+        paddingTop="27px"
+        fontSize={['sm', 'sm', 'sm', 'lg']}
+      >
         At Saleswhale, we encourage everyone to grow and innovate, while having
         fun in the process.
       </Text>

@@ -3,7 +3,7 @@ import React from 'react';
 
 function About() {
   return (
-    <Box margin="auto" paddingTop={8}>
+    <Box margin="auto" paddingTop={6} paddingBottom={[4, 8]}>
       <Image
         src="../assets/hero-img.png"
         alt="hero image"
@@ -15,15 +15,11 @@ function About() {
         textAlign="left"
         color="#002240"
         spacing={8}
-        paddingTop={['8px', '8px', '12px', '36px']}
+        paddingTop={[4, 4, 10]}
         columns={[1, 1, 2, 2]}
       >
         <Box>
-          <Heading
-            // fontSize={['32px', '32px', '58px']}
-            fontSize={['2xl', '2xl', '3xl']}
-            lineHeight={['40px', '40px', '62px']}
-          >
+          <Heading fontSize={['2xl', '2xl', '2xl', '3xl']} lineHeight="100%">
             A future where AI and humans work hand in hand
           </Heading>
         </Box>

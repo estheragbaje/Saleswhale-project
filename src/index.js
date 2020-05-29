@@ -26,6 +26,7 @@ const myTheme = {
     taller: '32px',
     tallest: '38px',
   },
+  breakpoints: ['320px', '768px', '1440px'],
 };
 
 ReactDOM.render(
