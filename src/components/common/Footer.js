@@ -19,6 +19,13 @@ export function FooterText({ children }) {
     </Text>
   );
 }
+
+// const footerArray = [
+//   {
+//     label: 'Collaborative Intelligence',
+//     url: '#',
+//   },
+// ];
 export function WhySaleswhale({ ...rest }) {
   return (
     <Box {...rest}>
@@ -103,16 +110,17 @@ export function TopFooter() {
 export function BottomFooter() {
   return (
     <Flex
-      bg="#F4F4F4"
-      padding={12}
+      backgroundColor="#F4F4F4"
+      marginTop={16}
+      paddingX={12}
+      paddingTop={20}
       justifyContent="space-between"
       alignItems="center"
-      height="240px"
       direction={['column-reverse', 'column-reverse', 'row', 'row']}
-      backgroundImage="url(./assets/Vector3_footer_bg.png)"
-      backgroundSize="contain"
-      backgroundPosition=" 0 170px"
-      backgroundRepeat="repeat-x"
+      backgroundImage="url(./assets/footer_bg_.png)"
+      backgroundSize="cover"
+      backgroundPosition=" 0 -200px"
+      backgroundRepeat="no-repeat"
     >
       <Box textAlign={['center', 'center', 'left', 'left']}>
         <FooterHeading title="Privacy Terms" />
@@ -122,7 +130,12 @@ export function BottomFooter() {
           children="© 2020 Saleswhale, Inc. All rights reserved."
         />
       </Box>
-      <SimpleGrid listStyleType="none" columns={3} spacing={16}>
+      <SimpleGrid
+        listStyleType="none"
+        columns={3}
+        spacing={16}
+        paddingBottom={12}
+      >
         <SocialLink
           icon={FaFacebook}
           label="facebook"

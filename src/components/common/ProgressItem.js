@@ -37,7 +37,7 @@ function ProgressItem({ year, children, ...rest }) {
           />
           <ProgressIcon width="80px" marginTop="-8px" />
         </Stack>
-        <Box px={4}></Box>
+        <Box px={2}></Box>
         <Box maxWidth="600px">
           <Text
             fontSize={['sm', 'sm', 'lg', '2lg']}

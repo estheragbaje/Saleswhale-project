@@ -6,8 +6,8 @@ import SubHeading from './common/Subheading';
 function Offices() {
   return (
     <Box
-      paddingY={[4, 8, 16]}
-      backgroundImage="url(./assets/Vector19_bg_image.png)"
+      paddingY={[4, 8, 20]}
+      backgroundImage="url(./assets/Vector2_offices_.png)"
       backgroundSize="cover"
       backgroundPosition=" 0 100px"
       backgroundRepeat="repeat-x"
@@ -15,7 +15,7 @@ function Offices() {
     >
       <Box px={['30px', '30px', '60px', '110px']}>
         <SubHeading children="Our Offices" />
-        <SimpleGrid columns={[1, 1, 2, 2]} spacing={16} paddingTop="27px">
+        <SimpleGrid columns={[1, 1, 2, 2]} spacing={16} paddingTop="40px">
           <OfficeCard
             location="Singapore"
             address="155B Telok Ayer Street Singapore, 068611"

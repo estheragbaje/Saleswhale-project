@@ -4,7 +4,7 @@ import SubHeading from './common/Subheading';
 
 function Future() {
   return (
-    <Box bg="#329DFA" mx={[0, 0, 12, 12]}>
+    <Box bg="#329DFA" mx={[0, 0, 12, 12]} my={8}>
       <Box p={8}>
         <SubHeading
           children="See the future"
