@@ -5,6 +5,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+/**
+ * Created theme object using ChakraUI to minimise repetition of code and define the entire applications's style
+ */
+
 const myTheme = {
   ...theme,
   fonts: {

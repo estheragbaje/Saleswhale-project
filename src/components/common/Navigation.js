@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Box,
   Button,
@@ -15,7 +16,6 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/core';
-import React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { useMediaQuery } from 'react-responsive';
 import { LogoIcon } from './Logo';
@@ -151,6 +151,10 @@ export function DesktopNavigation() {
     </Box>
   );
 }
+
+/**
+ *Utilised React responsive library to feature desktop nav and mobile nav at the necessary screen sizes
+ */
 
 function Navigation() {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
