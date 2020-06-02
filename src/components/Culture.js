@@ -10,6 +10,7 @@ function Culture() {
       paddingY={[4, 8, 16]}
       textAlign={['left', 'left', 'center', 'center']}
       px={['30px', '30px', '60px', '110px']}
+      backgroundImage="url(./assets/culture_bg_.png)"
     >
       <SubHeading children="Our Culture" />
       <Text
