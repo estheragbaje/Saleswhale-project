@@ -84,12 +84,7 @@ export function MobileNavigation() {
             </Stack>
           </DrawerBody>
           <DrawerFooter>
-            <Button
-              variant="outline"
-              mr={2}
-              onClick={onClose}
-              variantColor="red"
-            >
+            <Button variant="outline" onClick={onClose} variantColor="red">
               Close
             </Button>
           </DrawerFooter>
