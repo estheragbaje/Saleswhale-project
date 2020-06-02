@@ -200,19 +200,20 @@ export function TopFooter() {
 export function BottomFooter() {
   return (
     <Box
-      // backgroundImage="url(./assets/footer_bg_.png)"
-      // backgroundSize="cover"
-      // backgroundPosition=" 0 -170px"
-      // backgroundRepeat="no-repeat"
+      backgroundImage="url(./assets/footer_bg_.png)"
+      backgroundSize="cover"
+      backgroundPosition="bottom"
+      backgroundRepeat="no-repeat"
       bg="#F4F4F4"
       paddingX={12}
-      paddingY={20}
+      paddingY={24}
       marginTop={16}
     >
       <Flex
         justifyContent="space-between"
         alignItems="center"
         direction={['column-reverse', 'column-reverse', 'row', 'row']}
+        py={8}
       >
         <Box textAlign={['center', 'center', 'left', 'left']}>
           <FooterHeading title="Privacy Terms" />
