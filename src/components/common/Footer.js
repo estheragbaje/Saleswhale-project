@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/core';
+import { Box, Flex, Heading, SimpleGrid, Text, Link } from '@chakra-ui/core';
 import React from 'react';
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { LogoIcon } from './Logo';
@@ -12,73 +12,164 @@ export function FooterHeading({ title }) {
   );
 }
 
-export function FooterText({ children }) {
+export function FooterText({ children, href }) {
   return (
-    <Text color="#002240" fontSize={['sm', 'sm', 'md']} py={2}>
+    <Text color="#002240" fontSize={['sm', 'sm', 'md']} py={2} href={href}>
       {children}
     </Text>
   );
 }
 
-// const footerArray = [
-//   {
-//     label: 'Collaborative Intelligence',
-//     url: '#',
-//   },
-// ];
+/**
+ * Refactored footer to avoid repetition by creating an array of objects
+ */
+
+const whySalesWhaleArray = [
+  {
+    label: 'Collaborative Intelligence',
+    url: '#',
+  },
+  {
+    label: 'AI Assistant Capabilities',
+    url: '#',
+  },
+  {
+    label: 'Customer Stories',
+    url: '#',
+  },
+  {
+    label: 'Use Case - Technology',
+    url: '#',
+  },
+  {
+    label: 'Use Case - Education',
+    url: '#',
+  },
+  {
+    label: 'Use Case - Events',
+    url: '#',
+  },
+];
+
 export function WhySaleswhale({ ...rest }) {
   return (
     <Box {...rest}>
       <FooterHeading title="Why Saleswhales" />
-      <FooterText children="Collaborative Intelligence" />
-      <FooterText children="AI Assistant Capabilities" />
-      <FooterText children="Customer Stories" />
-      <FooterText children="Use Case - Technology" />
-      <FooterText children="Use Case - Education" />
-      <FooterText children="Use Case - Events" />
+      {whySalesWhaleArray.map((item) => {
+        return (
+          <Link href={item.url}>
+            <FooterText children={item.label} />
+          </Link>
+        );
+      })}
     </Box>
   );
 }
+
+const productArray = [
+  {
+    label: 'AI Conversations',
+    url: '#',
+  },
+  {
+    label: 'Lead Enrichment',
+    url: '#',
+  },
+  {
+    label: 'Deal Intelligence',
+    url: '#',
+  },
+  {
+    label: 'Workflow Integration',
+    url: '#',
+  },
+];
 
 export function Product({ ...rest }) {
   return (
     <Box {...rest}>
       <FooterHeading title="Product" />
-      <FooterText children="AI Conversations" />
-      <FooterText children="Lead Enrichment" />
-      <FooterText children="Deal Intelligence" />
-      <FooterText children="Workflow Integration" />
+      {productArray.map((item) => {
+        return (
+          <Link href={item.url}>
+            <FooterText children={item.label} />
+          </Link>
+        );
+      })}
     </Box>
   );
 }
+
+const companyArray = [
+  {
+    label: 'About us',
+    url: '#',
+  },
+  {
+    label: 'Blog',
+    url: '#',
+  },
+  {
+    label: 'Resources',
+    url: '#',
+  },
+  {
+    label: 'Careers',
+    url: '#',
+  },
+  {
+    label: 'Help Centre',
+    url: '#',
+  },
+];
 
 export function Company({ ...rest }) {
   return (
     <Box {...rest}>
       <FooterHeading title="Company" />
-      <FooterText children="About us" />
-      <FooterText children="Blog" />
-      <FooterText children="Resources" />
-      <FooterText children="Careers" />
-      <FooterText children="Help Centre" />
+      {companyArray.map((item) => {
+        return (
+          <Link href={item.url}>
+            <FooterText children={item.label} />
+          </Link>
+        );
+      })}
     </Box>
   );
 }
+
+const contactArray = [
+  {
+    title: 'About us',
+    label: 'hello@saleswhale.com',
+    url: '#',
+  },
+  {
+    title: 'US Office',
+    label: '1701 Rhode Island Ave NW Washington, DC 20036',
+    url: '#',
+  },
+  {
+    title: 'Singapore Office',
+    label: '155B Telok Ayer Street Singapore, 068611',
+    url: '#',
+  },
+];
 
 export function Contact({ ...rest }) {
   return (
     <Box {...rest}>
       <Box paddingBottom={4}>
-        <FooterHeading title="Contact" />
-        <FooterText children="hello@saleswhale.com" />
-      </Box>
-      <Box paddingBottom={4}>
-        <FooterHeading title="US Office" />
-        <FooterText children="1701 Rhode Island Ave NW Washington, DC 20036" />
-      </Box>
-      <Box paddingBottom={4}>
-        <FooterHeading title="Singapore Office" />
-        <FooterText children="155B Telok Ayer Street Singapore, 068611" />
+        {contactArray.map((item) => {
+          return (
+            <Box paddingBottom={4}>
+              <FooterHeading title={item.title} />
+              <Link href={item.url}>
+                <FooterText children={item.label} />
+              </Link>
+            </Box>
+          );
+        })}
       </Box>
     </Box>
   );
@@ -109,47 +200,54 @@ export function TopFooter() {
 
 export function BottomFooter() {
   return (
-    <Flex
-      backgroundColor="#F4F4F4"
-      marginTop={16}
+    <Box
+      // backgroundImage="url(./assets/footer_bg_.png)"
+      // backgroundSize="cover"
+      // backgroundPosition=" 0 -170px"
+      // backgroundRepeat="no-repeat"
       paddingX={12}
       paddingTop={20}
-      justifyContent="space-between"
-      alignItems="center"
-      direction={['column-reverse', 'column-reverse', 'row', 'row']}
-      backgroundImage="url(./assets/footer_bg_.png)"
-      backgroundSize="cover"
-      backgroundPosition=" 0 -200px"
-      backgroundRepeat="no-repeat"
+      marginTop={16}
     >
-      <Box textAlign={['center', 'center', 'left', 'left']}>
-        <FooterHeading title="Privacy Terms" />
-        <FooterText
-          py={12}
-          fontSize="14px"
-          children="© 2020 Saleswhale, Inc. All rights reserved."
-        />
-      </Box>
-      <SimpleGrid
-        listStyleType="none"
-        columns={3}
-        spacing={16}
-        paddingBottom={12}
+      <Flex
+        justifyContent="space-between"
+        alignItems="center"
+        direction={['column-reverse', 'column-reverse', 'row', 'row']}
       >
-        <SocialLink
-          icon={FaFacebook}
-          label="facebook"
-          link="#"
-          color="#35589D"
-        />
-        <SocialLink icon={FaTwitter} label="twitter" link="#" color="#5DA8DC" />
-        <SocialLink
-          icon={FaLinkedin}
-          label="linkedin"
-          link="#"
-          color="#337BB1"
-        />
-      </SimpleGrid>
-    </Flex>
+        <Box textAlign={['center', 'center', 'left', 'left']}>
+          <FooterHeading title="Privacy Terms" />
+          <FooterText
+            py={12}
+            fontSize="14px"
+            children="© 2020 Saleswhale, Inc. All rights reserved."
+          />
+        </Box>
+        <SimpleGrid
+          listStyleType="none"
+          columns={3}
+          spacing={16}
+          paddingBottom={12}
+        >
+          <SocialLink
+            icon={FaFacebook}
+            label="facebook"
+            link="#"
+            color="#35589D"
+          />
+          <SocialLink
+            icon={FaTwitter}
+            label="twitter"
+            link="#"
+            color="#5DA8DC"
+          />
+          <SocialLink
+            icon={FaLinkedin}
+            label="linkedin"
+            link="#"
+            color="#337BB1"
+          />
+        </SimpleGrid>
+      </Flex>
+    </Box>
   );
 }
