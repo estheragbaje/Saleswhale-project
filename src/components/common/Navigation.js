@@ -86,7 +86,7 @@ export function MobileNavigation() {
           <DrawerFooter>
             <Button
               variant="outline"
-              mr={3}
+              mr={2}
               onClick={onClose}
               variantColor="red"
             >
@@ -118,6 +118,7 @@ export function DesktopNavigation() {
       top="0"
       zIndex={1}
       bg="white"
+      // boxShadow="0px 10px 40px rgba(0, 0, 0, 0.06)"
     >
       <Flex alignItems="center" justifyContent="space-between">
         <LogoIcon minWidth="200px" />

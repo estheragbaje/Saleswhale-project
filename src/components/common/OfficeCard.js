@@ -12,7 +12,7 @@ function OfficeCard({ location, address, logo, name, ...rest }) {
       paddingY={16}
       paddingX={12}
       boxShadow="0px 10px 40px rgba(0, 0, 0, 0.08)"
-      // className="w3-container w3-animate-top"
+      className="w3-container w3-animate-top"
     >
       {logo ? (
         <Image src={logo} alt={name} marginLeft="auto" marginRight="auto" />
