@@ -3,24 +3,26 @@ import { Button } from '@chakra-ui/core';
 
 export function CustomButton({
   href,
-  content,
+  children,
   width,
   height,
   variant,
   variantColor,
+  size,
   ...rest
 }) {
   return (
     <Button
-      as="a"
-      fontSize="16px"
+      fontSize={['xs', 'xm', 'sm', 'sm']}
       width={width}
-      height={height}
       variant={variant}
-      variantColor={variantColor}
+      variantColor="blue"
+      size={size}
       {...rest}
+      px={['20px', '20px', '30px']}
+      height={height}
     >
-      {content}
+      {children}
     </Button>
   );
 }

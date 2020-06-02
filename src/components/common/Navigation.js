@@ -5,6 +5,7 @@ import {
   Drawer,
   DrawerBody,
   DrawerContent,
+  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Flex,
@@ -13,12 +14,12 @@ import {
   Stack,
   Text,
   useDisclosure,
-  DrawerFooter,
 } from '@chakra-ui/core';
 import React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { useMediaQuery } from 'react-responsive';
 import { LogoIcon } from './Logo';
+import { CustomButton } from './CustomButton';
 
 function MobileNavLink({ children, ...rest }) {
   return (
@@ -59,16 +60,36 @@ export function MobileNavigation() {
               <MobileNavLink children="Company" />
               <MobileNavLink children="Product" />
 
-              <Button variant="outline" variantColor="blue">
-                Log In
-              </Button>
-              <Button variant="solid" variantColor="blue">
-                Get a Demo
-              </Button>
+              <CustomButton
+                children="Log In"
+                variant="outline"
+                borderColor="#0688FA"
+                _hover={{ bg: '#64B4FA' }}
+                _focus="blue.800"
+                size="lg"
+                width="100%"
+                height={['36px', '36px', '48px']}
+              />
+              <CustomButton
+                children="Get a Demo"
+                bg="#0688FA"
+                variant="solid"
+                borderColor="#0688FA"
+                _hover={{ bg: '#64B4FA' }}
+                _focus="blue.800"
+                size="lg"
+                width="full"
+                height={['36px', '36px', '48px']}
+              />
             </Stack>
           </DrawerBody>
           <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
+            <Button
+              variant="outline"
+              mr={3}
+              onClick={onClose}
+              variantColor="red"
+            >
               Close
             </Button>
           </DrawerFooter>
@@ -106,12 +127,25 @@ export function DesktopNavigation() {
           <NavigationText href="#">Company</NavigationText>
         </SimpleGrid>
         <SimpleGrid columns={2} spacing={4}>
-          <Button variant="outline" variantColor="blue">
-            Log In
-          </Button>
-          <Button variant="solid" variantColor="blue">
-            Get a Demo
-          </Button>
+          <CustomButton
+            children="Log In"
+            variant="outline"
+            borderColor="#0688FA"
+            _hover={{ bg: '#64B4FA' }}
+            _focus="blue.800"
+            size="lg"
+            height={['36px', '36px', '48px']}
+          />
+          <CustomButton
+            children="Get a Demo"
+            bg="#0688FA"
+            variant="solid"
+            borderColor="#0688FA"
+            _hover={{ bg: '#64B4FA' }}
+            _focus="blue.800"
+            size="lg"
+            height={['36px', '36px', '48px']}
+          />
         </SimpleGrid>
       </Flex>
     </Box>

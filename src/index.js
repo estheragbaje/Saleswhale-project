@@ -20,6 +20,7 @@ const myTheme = {
     lg: '21px',
     md: '18px',
     sm: '16px',
+    xs: '14px',
   },
   lineHeights: {
     tall: '24px',

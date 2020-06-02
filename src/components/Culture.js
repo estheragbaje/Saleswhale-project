@@ -1,5 +1,6 @@
-import { Box, Button, SimpleGrid, Text } from '@chakra-ui/core';
 import React from 'react';
+import { Box, Button, SimpleGrid, Text } from '@chakra-ui/core';
+import { CustomButton } from './common/CustomButton';
 import CultureCard from './common/CultureCard';
 import SubHeading from './common/Subheading';
 
@@ -38,13 +39,26 @@ function Culture() {
           If you are excited by our vision of the future, and want to solve
           meaningful problems, talk to us!
         </Text>
-        <Button
+        {/* <Button
           variantColor="blue"
           size="lg"
           width={['full', '240px', '240px']}
         >
           Join the team
-        </Button>
+        </Button> */}
+        <CustomButton
+          children="Join the Team"
+          bg="#0688FA"
+          variant="solid"
+          borderColor="#0688FA"
+          _hover={{ bg: '#64B4FA' }}
+          _focus="blue.800"
+          height="60px"
+          px={['20px', '20px', '30px']}
+          size="2xl"
+          fontSize={['sm', 'sm', 'md']}
+          width={['full', 'full', '300px', '300px']}
+        />
       </Box>
     </Box>
   );
