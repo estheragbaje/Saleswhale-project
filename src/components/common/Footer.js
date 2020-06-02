@@ -164,9 +164,7 @@ export function Contact({ ...rest }) {
           return (
             <Box paddingBottom={4}>
               <FooterHeading title={item.title} />
-              <Link href={item.url}>
-                <FooterText children={item.label} />
-              </Link>
+              <FooterText children={item.label} />
             </Box>
           );
         })}
@@ -185,7 +183,8 @@ export function TopFooter() {
       px={['30px', '30px', '60px', '110px']}
     >
       <LogoIcon
-        minWidth={['70px', '70px', '200px', '200px']}
+        // minWidth={['70px', '70px', '200px', '200px']}
+        minWidth={['50px', '50px', '200px', '200px']}
         py={[8, 8, 0, 0]}
       />
       <SimpleGrid columns={[2, 2, 2, 4]} spacing={8} marginLeft={[0, 0, 8, 12]}>
@@ -205,8 +204,9 @@ export function BottomFooter() {
       // backgroundSize="cover"
       // backgroundPosition=" 0 -170px"
       // backgroundRepeat="no-repeat"
+      bg="#F4F4F4"
       paddingX={12}
-      paddingTop={20}
+      paddingY={20}
       marginTop={16}
     >
       <Flex

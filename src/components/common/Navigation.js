@@ -13,6 +13,7 @@ import {
   Stack,
   Text,
   useDisclosure,
+  DrawerFooter,
 } from '@chakra-ui/core';
 import React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
@@ -66,17 +67,24 @@ export function MobileNavigation() {
               </Button>
             </Stack>
           </DrawerBody>
+          <DrawerFooter>
+            <Button variant="outline" mr={3} onClick={onClose}>
+              Close
+            </Button>
+          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </>
   );
 }
 
-export function NavigationText({ children }) {
+export function NavigationText({ children, href }) {
   return (
-    <Text color="#002240" fontWeight="700" fontSize="md">
-      {children}
-    </Text>
+    <Link href={href}>
+      <Text color="#002240" fontWeight="700" fontSize="md">
+        {children}
+      </Text>
+    </Link>
   );
 }
 
@@ -93,9 +101,9 @@ export function DesktopNavigation() {
       <Flex alignItems="center" justifyContent="space-between">
         <LogoIcon minWidth="200px" />
         <SimpleGrid columns={3} spacing={12} textAlign="center">
-          <NavigationText>Why Saleswhale?</NavigationText>
-          <NavigationText>Product</NavigationText>
-          <NavigationText>Company</NavigationText>
+          <NavigationText href="#">Why Saleswhale?</NavigationText>
+          <NavigationText href="#">Product</NavigationText>
+          <NavigationText href="#">Company</NavigationText>
         </SimpleGrid>
         <SimpleGrid columns={2} spacing={4}>
           <Button variant="outline" variantColor="blue">
