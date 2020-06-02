@@ -43,7 +43,7 @@ export function MobileNavigation() {
         alignItems="center"
         px={['30px', '30px', '60px', '110px']}
       >
-        <LogoIcon alt="logo" minWidth="120px" />
+        <LogoIcon alt="logo" minWidth="150px" />
         <Button variantColor="white" onClick={onOpen}>
           <Box as={AiOutlineMenu} size="30px" color="black" />
         </Button>
