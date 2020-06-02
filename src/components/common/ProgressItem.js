@@ -9,6 +9,7 @@ function ProgressItem({ year, children, ...rest }) {
         margin="auto"
         justifyContent="space-between"
         alignItems="center"
+        textAlign="left"
         px={12}
       >
         <Box maxWidth="100px">
