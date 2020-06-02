@@ -1,7 +1,7 @@
+import { Box, SimpleGrid, Text } from '@chakra-ui/core';
 import React from 'react';
-import { Box, Button, SimpleGrid, Text } from '@chakra-ui/core';
-import { CustomButton } from './common/CustomButton';
 import CultureCard from './common/CultureCard';
+import { CustomButton } from './common/CustomButton';
 import SubHeading from './common/Subheading';
 
 function Culture() {

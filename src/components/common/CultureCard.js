@@ -1,5 +1,5 @@
+import { Heading, Image, PseudoBox, Text } from '@chakra-ui/core';
 import React from 'react';
-import { Box, Image, Heading, Text, PseudoBox } from '@chakra-ui/core';
 
 function CultureCard({ headline, children }) {
   return (
