@@ -232,19 +232,19 @@ export function BottomFooter() {
           <SocialLink
             icon={FaFacebook}
             label="facebook"
-            link="#"
+            link="https://www.facebook.com/saleswhaleio/"
             color="#35589D"
           />
           <SocialLink
             icon={FaTwitter}
             label="twitter"
-            link="#"
+            link="https://twitter.com/saleswhaleio"
             color="#5DA8DC"
           />
           <SocialLink
             icon={FaLinkedin}
             label="linkedin"
-            link="#"
+            link="https://www.linkedin.com/company/saleswhale"
             color="#337BB1"
           />
         </SimpleGrid>

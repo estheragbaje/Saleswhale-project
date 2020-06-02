@@ -21,10 +21,10 @@ import { useMediaQuery } from 'react-responsive';
 import { LogoIcon } from './Logo';
 import { CustomButton } from './CustomButton';
 
-function MobileNavLink({ children, ...rest }) {
+function MobileNavLink({ children, href, ...rest }) {
   return (
     <Box {...rest}>
-      <Link my={4} href="#">
+      <Link my={4} href={href}>
         {children}
       </Link>
       <Divider />
@@ -42,10 +42,11 @@ export function MobileNavigation() {
         justifyContent="space-between"
         alignItems="center"
         px={['30px', '30px', '60px', '110px']}
+        py={4}
       >
         <LogoIcon alt="logo" minWidth="150px" />
         <Button variantColor="white" onClick={onOpen}>
-          <Box as={AiOutlineMenu} size="30px" color="black" />
+          <Box as={AiOutlineMenu} size="30px" color="#0688FA" />
         </Button>
       </Flex>
       <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
@@ -56,9 +57,18 @@ export function MobileNavigation() {
           </DrawerHeader>
           <DrawerBody>
             <Stack textAlign="center" fontWeight="700" spacing={6}>
-              <MobileNavLink children="Why Saleswhale?" />
-              <MobileNavLink children="Company" />
-              <MobileNavLink children="Product" />
+              <MobileNavLink
+                children="Why Saleswhale?"
+                href="https://www.saleswhale.com/"
+              />
+              <MobileNavLink
+                children="Company"
+                href="https://www.saleswhale.com/platform"
+              />
+              <MobileNavLink
+                children="Product"
+                href="https://www.saleswhale.com/about"
+              />
 
               <CustomButton
                 children="Log In"
@@ -113,15 +123,20 @@ export function DesktopNavigation() {
       top="0"
       zIndex={1}
       bg="white"
-      // boxShadow="0px 10px 40px rgba(0, 0, 0, 0.06)"
       boxShadow="0 1px 4px rgba(23,25,27,0.05)"
     >
       <Flex alignItems="center" justifyContent="space-between">
         <LogoIcon minWidth="200px" />
         <SimpleGrid columns={3} spacing={12} textAlign="center">
-          <NavigationText href="#">Why Saleswhale?</NavigationText>
-          <NavigationText href="#">Product</NavigationText>
-          <NavigationText href="#">Company</NavigationText>
+          <NavigationText href="https://www.saleswhale.com/">
+            Why Saleswhale?
+          </NavigationText>
+          <NavigationText href="https://www.saleswhale.com/platform">
+            Product
+          </NavigationText>
+          <NavigationText href="https://www.saleswhale.com/about">
+            Company
+          </NavigationText>
         </SimpleGrid>
         <SimpleGrid columns={2} spacing={4}>
           <CustomButton
